@@ -8,12 +8,13 @@ resource "aws_instance" "web" {
       user = "root"
       password = "DevOps321"
       host = self.public_ip
+    }
       inline = [
         "cd /tmp",
-        "git clone https://pavandeops357:pavan357github.com/Pavandevops357/pkDevOps.git",
+        "git clone https://pavandeops357:pavan357@github.com/Pavandevops357/pkDevOps.git",
         "sh /tmp/pkDevOps/student-app.sh",
 
       ]
     }
   }
-}
+
