@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
       host = self.public_ip
       inline = [
         "cd /tmp",
-        "git clone https://github.com/Pavandevops357/pkDevOps.git",
+        "git clone https://pavandeops357:pavan357github.com/Pavandevops357/pkDevOps.git",
         "sh /tmp/pkDevOps/student-app.sh",
 
       ]
